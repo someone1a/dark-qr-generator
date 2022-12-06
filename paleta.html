@@ -1,37 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>paleta de colores utilizados</title>
     <style>
-        body{
+        body {
             background-color: white;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        .background{
-            background: rgb(55,27,88);
-background: -moz-linear-gradient(29deg, rgba(55,27,88,1) 0%, rgba(76,53,117,1) 100%, rgba(0,212,255,1) 100%);
-background: -webkit-linear-gradient(29deg, rgba(55,27,88,1) 0%, rgba(76,53,117,1) 100%, rgba(0,212,255,1) 100%);
-background: linear-gradient(29deg, rgba(55,27,88,1) 0%, rgba(76,53,117,1) 100%, rgba(0,212,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#371b58",endColorstr="#00d4ff",GradientType=1);
-height: 400px;
-color: white;
+
+        .background {
+            background: rgb(55, 27, 88);
+            background: -moz-linear-gradient(29deg, rgba(55, 27, 88, 1) 0%, rgba(76, 53, 117, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            background: -webkit-linear-gradient(29deg, rgba(55, 27, 88, 1) 0%, rgba(76, 53, 117, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            background: linear-gradient(29deg, rgba(55, 27, 88, 1) 0%, rgba(76, 53, 117, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#371b58", endColorstr="#00d4ff", GradientType=1);
+            height: 400px;
+            color: white;
         }
-        .c4c35{
+
+        .c4c35 {
             background-color: #4C3575;
         }
-        .used{
+
+        .used {
             margin: 15%;
             font-size: 3rem;
         }
-        .c371B58{
+
+        .c371B58 {
             background-color: #371B58;
             color: white;
-        }    
-        </style>
+        }
+
+        .c5B4B8A{
+            background-color: #5B4B8A;
+        }
+        .wraper {
+            background: #5B4B8A;
+            height: 265px;
+            border-radius: 7px;
+            padding: 20px 25px 0;
+            transition: height 0.2s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .wrapper .form{
+  margin: 20px 0 25px;
+}
+.form :where(input, button){
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+.form input{
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+.form input:focus{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.form input::placeholder{
+  color: #EEEEEE;
+}
+#placeholder{
+    background-color: transparent;
+    border: solid #8B9A46 2px;
+}
+#placeholder:hover{
+    border: solid #8B9A46 4px ;
+}
+.form button{
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background-color: #7858A6;
+}
+.c8B9A46{
+    background-color: #8B9A46;
+}
+.cEEEEEE{
+    color: #EEEEEE;
+    background-color: black;
+}
+.c7858A6{
+    background-color: #7858A6;
+}
+    </style>
 </head>
+
 <body>
     <div class="background">
         <br>
@@ -44,5 +110,41 @@ color: white;
             <li class="c4c35">#4C3575</li>
         </ul>
     </div>
+    <div class="background">
+        <br>
+        <div class="wraper">
+            <h2>contenedor</h2>
+        </div>
+        <br>
+    </div>
+    <div class="used">
+        <h3>colores utilizados para el contenedor</h3>
+        <ul>
+            <li><a href="">Fondo(Background)</a></li>
+            <li class="c5B4B8A">#5B4B8A</li>
+        </ul>
+    </div>
+    <div class="background">
+        <br>
+        <div class="wraper">
+            <h2>contenedor</h2>
+            <div class="form">
+                <h3>Formulario</h3>
+                <input type="text" spellcheck="false" placeholder="ingrese un texto o una direccion URL" id="placeholder">
+            <button>Generador QR</button>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="used">
+        <h3>colores utilizados</h3>
+        <ul>
+            <li class="c8B9A46">bordes del input #8B9A46 </li>
+            <li class="cEEEEEE">color del texto del input #EEEEEE</li>
+            <li class="c7858A6">Color de los botones #7858A6</li>
+            <li></li>
+        </ul>
+    </div>
 </body>
+
 </html>
