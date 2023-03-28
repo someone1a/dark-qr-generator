@@ -13,6 +13,7 @@ only with the condition of don't change the code. INCLUIDING the copyright
 - Online platform
 - HTML - CSS - JAVASCRIPT code
 - Everyone can use it 
+- Open Source Code
 
 ## Installation
 
