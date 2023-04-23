@@ -4,7 +4,7 @@ This Qr generator can make the qr code and you can download it
 ## Appendix
 
 This tool is maked with the propose of everyone can use the code into their proyects,
-only with the condition of don't change the code. INCLUIDING the copyright
+only with the condition of don't change the code.
 ## Features
 
 - Light/dark mode toggle
